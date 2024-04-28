@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --background-inside: white;
+  --border-bottom: rgba(232, 232, 234, 1);
+  --click: rgba(244, 123, 86, 1);
+}
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(176, 104, 233, 1) 100%,
+    rgba(100, 99, 231, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  width: 920px;
+  height: 509px;
+  border-radius: 23px;
+  background-color: var(--background-inside);
+  margin-top: 129px;
+  display: flex;
+  justify-content: space-between;
+}
+.images {
+  width: 460px;
+  position: relative;
+}
+.main-img {
+  width: 471.69px;
+  height: 358.13px;
+  position: absolute;
+  left: 0px;
+  top: 70.81px;
+}
+.box {
+  position: absolute;
+  left: -93px;
+  top: 200px;
+}
+.shadow {
+  position: absolute;
+  top: 150px;
+  left: 100px;
+}
+.right-side {
+  width: 440px;
+}
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 65px;
+  margin-bottom: 35px;
+}
+.arrow {
+  width: 8px;
+  height: 4px;
+  margin: 10px;
+}
+.right-down {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+span {
+  font-size: 14px;
+}
+.containers {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.perent-div {
+  border-bottom: 3px solid var(--border-bottom);
+  display: flex;
+  flex-direction: column;
+}
+p {
+  font-size: 12px;
+}
+.added-one {
+  display: none;
+}
+.added-two {
+  display: none;
+}
+.added-three {
+  display: none;
+}
+.added-four {
+  display: none;
+}
+.added-five {
+  display: none;
+}
+span {
+  cursor: pointer;
+}
+span:hover {
+  color: var(--click);
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    width: 375px;
+    display: flex;
+    align-items: center;
+  }
+  .main {
+    width: 327px;
+    height: 535px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-img {
+    width: 236px;
+    height: 179px;
+    top: -100px;
+    left: 130px;
+  }
+  .box {
+    top: -50px;
+    left: 0px;
+  }
+  .shadow {
+    top: -250px;
+  }
+  .right-side {
+    width: 279px;
+    height: 355px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px;
+  }
+  .right-down {
+    align-items: center;
+  }
+  .containers {
+    width: 279px;
+  }
+  p {
+    width: 279px;
+  }
+}
